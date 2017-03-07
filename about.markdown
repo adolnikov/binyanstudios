@@ -1,0 +1,26 @@
+---
+title: US Binyan Studios
+date: 2017-03-06 07:32:00 Z
+position: 0
+Field name:
+  Key: name
+  value: "/uploads/543376fb5dde229690000166.jpg"
+---
+
+#Our artists are our essence
+At Binyan, everyone brings unique and creative skills to the team. Unified by our commitment to meticulous detail and quality, our collective eye for beauty and careful consideration of the subtleties that make your project distinctive, translates into stunning results.
+
+#We are a united bunch
+Our clients become part of our team. Incorporating fun and openness into a highly technical process not only contributes to the overall experience, but gets better results. Open communication deepens our knowledge of each project, enabling us to emulate your buyers’ aspirational beauty. We know from experience that our collaborative, hands-on approach generates highly creative ideas in response to your brief.
+
+#Quality you can feel
+We bring your vision to life through evocative, photorealistic 3D imagery and animation. We give consideration to every surface texture, finish and light source, ensuring our images evoke warmth, ambience and beauty. We approach this process like an art curator ensuring that all objects work in harmony to tell a compelling and meaningful story.
+
+#Less is more
+We like to do the things we do brilliantly. Therefore, we specialise in a very boutique set of architectural visualisation skills that are perfecty tailored to your needs.
+
+We offer bespoke solutions in the areas of: 
+- Interior and exterior marketing perspectives or CGIs
+- Virtual Styling of 3d interiors
+- Exterior photo-montages for marketing and council submissions 
+- Animated marketing films (walk-throughs & flyovers)
