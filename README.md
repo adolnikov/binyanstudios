@@ -1,2 +1,0 @@
-# binyanstudios
-binyanstudios.com
