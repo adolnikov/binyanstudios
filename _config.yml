@@ -19,5 +19,5 @@ defaults:
     path: ''
     type: pages
   values:
-    layout: index
+    layout: page
 permalink: pretty
