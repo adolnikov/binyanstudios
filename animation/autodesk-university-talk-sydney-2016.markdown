@@ -1,6 +1,0 @@
----
-title: AUTODESK UNIVERSITY TALK SYDNEY 2016
-date: 2017-03-06 09:42:00 Z
-position: 7
----
-
