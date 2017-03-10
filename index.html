@@ -27,6 +27,7 @@
   <!--[if lte IE 9]><script type="text/javascript">window.ie = true</script><![endif]-->
 </head>
 <body>
+  {% include 'default' %}
 <script id="data" type="text/javascript">
   window.entryPoint = "{{current.url}}";
   window.siteData = {"pages": [{% include 'pageloop' %}]};
