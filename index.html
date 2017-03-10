@@ -1,3 +1,7 @@
+----------
+layout:default
+----------
+
 <!doctype html>
 <html>
 <head>
@@ -27,41 +31,7 @@
   <!--[if lte IE 9]><script type="text/javascript">window.ie = true</script><![endif]-->
 </head>
 <body>
-  {% for page in site.pages %}{
-"slug": "{{page.slug}}",
-"title": "{{page.title}}"{% if page.body != empty %},
-"body": {{page.body | json}}{% endif %}{% if page.assets.length > 0 %},
-"assets": [{% for asset in page.assets %}{"url": "{{asset.url}}"}{% unless asset == page.assets.last %},{% endunless %}{% endfor %}]{% endif %}{% if page.meta.length > 0 %},
-{% for meta in page.meta %}"{{meta.key}}": "{{meta.value}}"{% unless meta == page.meta.last %},{% endunless %}{% endfor %}{% endif %}{% if page.posts.length > 0 %},
-"posts": [{% for post in page.posts %}{"slug": "{{post.slug}}", "permalink": "{{post.permalink}}", "date": "{{post.date | date: "%d.%m.%Y" }}", "title": "{{post.title}}"{% if post.body != empty %}, "body": {{post.body | json}}{% endif %}{% if post.assets.length > 0 %}, "assets": [{% for asset in post.assets %}{"url": "{{asset.url}}"}{% unless asset == post.assets.last %},{% endunless %}{% endfor %}]{% endif %}{% if post.meta.length > 0 %}, {% for meta in post.meta %}"{{meta.key}}": "{{meta.value}}"{% unless meta == post.meta.last %},{% endunless %}{% endfor %}{% endif %}}{% unless post == page.posts.last %},{% endunless %}{% endfor %}]{% endif %}{% if page.pages.length > 0 %},
-"subpages": [{% for page in page.pages %}{
-"slug": "{{page.slug}}",
-"title": "{{page.title}}"{% if page.body != empty %},
-"body": {{page.body | json}}{% endif %}{% if page.assets.length > 0 %},
-"assets": [{% for asset in page.assets %}{"url": "{{asset.url}}"}{% unless asset == page.assets.last %},{% endunless %}{% endfor %}]{% endif %}{% if page.meta.length > 0 %},
-{% for meta in page.meta %}"{{meta.key}}": "{{meta.value}}"{% unless meta == page.meta.last %},{% endunless %}{% endfor %}{% endif %}{% if page.posts.length > 0 %},
-"posts": [{% for post in page.posts %}{"slug": "{{post.slug}}", "permalink": "{{post.permalink}}", "date": "{{post.date | date: "%d.%m.%Y" }}", "title": "{{post.title}}"{% if post.body != empty %}, "body": {{post.body | json}}{% endif %}{% if post.assets.length > 0 %}, "assets": [{% for asset in post.assets %}{"url": "{{asset.url}}"}{% unless asset == post.assets.last %},{% endunless %}{% endfor %}]{% endif %}{% if post.meta.length > 0 %}, {% for meta in post.meta %}"{{meta.key}}": "{{meta.value}}"{% unless meta == post.meta.last %},{% endunless %}{% endfor %}{% endif %}}{% unless post == page.posts.last %},{% endunless %}{% endfor %}]{% endif %}{% if page.pages.length > 0 %},
-"subpages": [{% for page in page.pages %}{
-"slug": "{{page.slug}}",
-"title": "{{page.title}}"{% if page.body != empty %},
-"body": {{page.body | json}}{% endif %}{% if page.assets.length > 0 %},
-"assets": [{% for asset in page.assets %}{"url": "{{asset.url}}"}{% unless asset == page.assets.last %},{% endunless %}{% endfor %}]{% endif %}{% if page.meta.length > 0 %},
-{% for meta in page.meta %}"{{meta.key}}": "{{meta.value}}"{% unless meta == page.meta.last %},{% endunless %}{% endfor %}{% endif %}{% if page.posts.length > 0 %},
-"posts": [{% for post in page.posts %}{"slug": "{{post.slug}}", "permalink": "{{post.permalink}}", "date": "{{post.date | date: "%d.%m.%Y" }}", "title": "{{post.title}}"{% if post.body != empty %}, "body": {{post.body | json}}{% endif %}{% if post.assets.length > 0 %}, "assets": [{% for asset in post.assets %}{"url": "{{asset.url}}"}{% unless asset == post.assets.last %},{% endunless %}{% endfor %}]{% endif %}{% if post.meta.length > 0 %}, {% for meta in post.meta %}"{{meta.key}}": "{{meta.value}}"{% unless meta == post.meta.last %},{% endunless %}{% endfor %}{% endif %}}{% unless post == page.posts.last %},{% endunless %}{% endfor %}]{% endif %}{% if page.pages.length > 0 %},
-"subpages": [{% for page in page.pages %}{
-"slug": "{{page.slug}}",
-"title": "{{page.title}}"{% if page.body != empty %},
-"body": {{page.body | json}}{% endif %}{% if page.assets.length > 0 %},
-"assets": [{% for asset in page.assets %}{"url": "{{asset.url}}"}{% unless asset == page.assets.last %},{% endunless %}{% endfor %}]{% endif %}{% if page.meta.length > 0 %},
-{% for meta in page.meta %}"{{meta.key}}": "{{meta.value}}"{% unless meta == page.meta.last %},{% endunless %}{% endfor %}{% endif %}{% if page.posts.length > 0 %},
-"posts": [{% for post in page.posts %}{"slug": "{{post.slug}}", "permalink": "{{post.permalink}}", "date": "{{post.date | date: "%d.%m.%Y" }}", "title": "{{post.title}}"{% if post.body != empty %}, "body": {{post.body | json}}{% endif %}{% if post.assets.length > 0 %}, "assets": [{% for asset in post.assets %}{"url": "{{asset.url}}"}{% unless asset == post.assets.last %},{% endunless %}{% endfor %}]{% endif %}{% if post.meta.length > 0 %}, {% for meta in post.meta %}"{{meta.key}}": "{{meta.value}}"{% unless meta == post.meta.last %},{% endunless %}{% endfor %}{% endif %}}{% unless post == page.posts.last %},{% endunless %}{% endfor %}]{% endif %}
-}{% unless page == page.pages.last %},{% endunless %}{% endfor %}
-]{% endif %}
-}{% unless page == page.pages.last %},{% endunless %}{% endfor %}
-]{% endif %}
-}{% unless page == page.pages.last %},{% endunless %}{% endfor %}
-]{% endif %}
-}{% unless page == site.pages.last %},{% endunless %}{% endfor %}
+ 
 
 <script id="data" type="text/javascript">
   window.entryPoint = "{{current.url}}";
@@ -71,3 +41,6 @@
 <script src="/index.js"></script>
 </body>
 </html>
+ {% for page in site.pages %}{
+  "slug": "{{page.slug}}",
+{% endfor %}
